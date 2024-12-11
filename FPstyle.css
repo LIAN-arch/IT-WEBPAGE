@@ -1,0 +1,448 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+
+.primary-navbar {
+  background-color: #001f3f;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  text-shadow:
+  0 0 10px hsl(199, 71%, 49%),
+  0 0 30px #0077ff,
+  0 0 40px #031cfe, 
+  0 0 50px #0077f6;
+    background: linear-gradient(270deg,  #001326, #002c9b);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+
+  }
+  
+  @keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.primary-navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.primary-navbar li {
+  display: inline;
+  font-size: 15px;
+}
+
+.secondary-navbar {
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff; 
+  padding: 10px 20px;
+  color: #001f3f;
+  flex-wrap: wrap; 
+}
+
+.secondary-navbar ul {
+  list-style-type: none;
+  margin: 1;
+  padding: 1;
+  display: flex;
+  justify-content: center; 
+}
+
+.secondary-navbar li {
+  margin: 0 30px 0 0;
+  position: relative; 
+}
+
+.secondary-navbar a {
+  color: #001f3f; 
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 15x;
+  transition: color 0.3s
+}
+
+.secondary-navbar a:hover {
+  color: #0b5f93; 
+}
+
+.section {
+  display: none; 
+  padding: 20px;
+  margin: 20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.section.active {
+  display: block; 
+}
+
+#home {
+  background-color: #03346e;
+  background-image: url('file:///C:/Users/Huawei/Downloads/texture.jpg'); /* Replace with the correct image path */
+  background-size: cover;
+  background-repeat: no-repeat; /* Prevent repeating */
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 10px;
+  color: white;
+  text-align: left;
+  padding-top: 50px;
+}
+
+.profile-photo {
+  width: 200px; 
+  height: 200px; 
+  border-radius: 10%;
+  border: 5px solid #edda0d; 
+  display: block; 
+  margin: 0 auto; 
+  margin-bottom: 1.5cm; 
+  box-shadow:  0 0 20px hsl(60, 18%, 91%),
+  0 0 30px #0a63bb,
+  0 0 40px #b3c60d, 
+  0 0 50px #3b7ec6;
+}
+
+#home h1 {
+  font-size: 1cm;
+  color: hwb(210 87% 0%); 
+  font-weight: bold; 
+  text-align: center;
+  line-height: .5cm;
+}
+
+#home h2 {
+  font-size: .6cm; 
+  text-align: center;
+  padding-bottom: .5cm;
+  color: #ffdd33; 
+  text-shadow:
+  0 0 20px hsl(60, 18%, 91%),
+  0 0 30px #0a63bb,
+  0 0 40px #b3c60d, 
+  0 0 50px #3b7ec6;
+}
+
+#home p {
+  font-size: .8cm;
+  color: hsl(0, 0%, 100%); 
+  font-weight: normal; 
+  text-align: justify;
+  text-indent: 50px;
+  padding-bottom: .5cm;
+}
+
+#skills {
+  background-color: #03346e; 
+  color: hsl(0, 0%, 100%); 
+}
+
+#skills h2{
+  text-align: center;
+  color: white;
+  font-size: 1cm; 
+}
+
+#scontent p{
+    text-align: center;
+    color: white;
+    font-size: .5cm; 
+}
+
+.content{
+  padding-bottom: 30px; 
+}
+
+.newbg { 
+  background-color: #e6f0f9; 
+  padding: 10px; 
+  border-radius: 10px; 
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.row p {
+  flex: 1; 
+  margin: 0;
+  text-align: justify;
+  text-indent: 50px;
+  padding: 0px 50px 0px 50px;
+  color: #001f3f;
+  font-size: .8cm;
+}
+
+.sphoto, .skphoto {
+    width: 200px;
+    height: 200px; 
+    border-radius: 10%;
+    border: 5px solid  #03346e; 
+    display: block;
+    margin: 1cm;
+    margin-bottom: 1.5cm;
+    box-shadow: 0 0 20px #03346e, 
+                0 0 30px #0a63bb,
+                0 0 40px #466ecb,
+                0 0 50px #3b7ec6;
+}
+
+.sphoto + p, .skphoto + p {
+    margin-left: 20px; 
+}
+
+#goal {
+  background-color: #0f3e79; 
+}
+
+.Header {
+  display: grid;
+  align-items: center; 
+  grid-template-columns: 150px auto;
+  gap: 20px;
+}
+
+#goal h1 {
+  margin-left: 20px; 
+  color: white;
+  font-size: 1cm; 
+}
+
+.SDG-photo{
+  width: 150px;
+  height: 150px; 
+  object-fit: cover;
+  background-blend-mode: color;
+  border: 5px solid  #03346e; 
+  margin-bottom: 30px;
+}
+
+.SDGcontent{
+  color: hsl(242, 59%, 13%); 
+  font-weight: normal; 
+  font-size: .8cm;
+  text-align:justify; 
+  text-indent: 50px;
+  padding: 0px 30px 0px 30px;
+}
+
+#projects {
+  background-color: #093d7d; 
+}
+
+#projects h2{
+  text-align: center;
+  color: white;
+  font-size: 1cm; 
+}
+
+.ProjectContent {
+  margin: 0 auto; 
+  padding: 20px;
+ }
+
+.row1, .row2 {
+  display: flex; 
+  align-items: center; 
+  margin-bottom: 20px;
+}
+
+.row1 p {
+  flex: 1;
+  margin: 0;
+  text-align: justify;
+  text-indent: 50px;
+  padding: 0px 30px 0px 30px;
+  color: #001f3f;
+  font-size: .8cm; 
+}
+
+.Hphoto {
+  width: 200px;
+  height: 200px;
+  margin-left: 20px;
+  margin-right: 30px; 
+  border: solid blue; 
+}
+
+.row2 {
+  justify-content: flex-start; 
+}
+
+.row2 p {
+  flex: 1;
+  margin: 0;
+  text-align: justify;
+  text-indent: 50px;
+  padding: 0px 30px 0px 30px;
+  color: #001f3f;
+  font-size: .8cm; 
+}
+
+.Yphoto {
+  width: 200px;
+  height: 200px;
+  margin-right: 20px;
+  margin-left: 30px; 
+  border: solid blue;
+}
+
+
+#contact {
+  background-color: #03346e; 
+  margin: 10px;
+  text-align: center;
+  overflow: visible;
+  height: 3cm; 
+}
+
+.contact-item {
+  float: left;
+  width: 30%; 
+  margin-right: 5%; 
+  text-align: center; 
+}
+
+.contact-item:last-child {
+  margin-right: 0; 
+}
+
+#contact h1 {
+  margin: 0;
+  font-size: 1.2em;
+  color:#6494c7
+}
+
+#contact p {
+  margin-top: .8cm; 
+  font-size: .5cm; 
+  color: #ffffff; 
+}
+
+.ebutton {
+  position: relative; 
+  background-color: #03346e;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  margin-top: 0.5cm;
+  transition: background-color 0.3s;
+}
+
+.ebutton:hover {
+  background-color: #3564a5;
+}
+
+.ebutton:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.fbutton {
+  position: relative; 
+  background-color: #03346e;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  margin-top: 0.5cm;
+  transition: background-color 0.3s;
+}
+
+.fbutton:hover {
+  background-color: #3564a5;
+}
+
+.fbutton:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  font-size: .350cm; 
+  width: 200px; 
+  background-color: rgb(42, 43, 43);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 125%; 
+  left: 50%;
+  margin-left: -80px; 
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip-text::after {
+  content: "";
+  position: absolute;
+  bottom: 100%; 
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.dropdown-content {
+  display: none; 
+  position: absolute; 
+  background-color: #ffffff;
+  min-width: 160px; 
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1; 
+}
+
+.dropdown-content a {
+  color: #001f3f;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1; 
+}
+
+.secondary-navbar li:hover .dropdown-content {
+  display: block; 
+}
+
+
+footer {
+  background-color: #ffffff;
+  color: #001f3f; 
+  text-align: center;
+  padding: 10px 0;
+}
+
